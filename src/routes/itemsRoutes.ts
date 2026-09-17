@@ -20,7 +20,7 @@ import { authenticateToken } from "../middlewares/authenMiddleware.ts";
 const router = Router({mergeParams: true});
 
 // GET /api/v665/Item/:userId 
-router.get("/:userId",(req: Request, res: Response) => {
+router.get("",(req: Request, res: Response) => {
      try {
     const userId = req.params.userId;
     const authUser = (req as any).user;
